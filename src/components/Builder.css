@@ -1,0 +1,247 @@
+body {
+  --text-color: #cac6c1;
+  --bg-color: #252728;
+  --border-color: #726b60;
+  --secondary-border-color: #726b605b;
+  --input-bg-color: #34383a;
+  --secondary-font-color: #a8a198;
+}
+
+#builder-container {
+  width: 500px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#builder-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+#builder-container form section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+#builder-container .title,
+#result-container .title {
+  font-size: 1.5rem;
+  font-variant: small-caps;
+  margin-bottom: 15px;
+}
+
+#builder-container form section input,
+#builder-container form section textarea {
+  border: 1px solid var(--border-color);
+  border-radius: 0.2em;
+  background-color: var(--input-bg-color);
+  color: var(--text-color);
+  font-size: 1em;
+  padding: 5px 5px;
+}
+
+#builder-container form section textarea {
+  resize: none;
+  overflow-y: scroll;
+  height: 100px;
+}
+
+#builder-container form section label {
+  margin-top: 10px;
+}
+
+#builder-container form section .work-container,
+#builder-container form section .education-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#builder-container form section .work-container:not(:nth-child(2)),
+#builder-container form section .education-container:not(:nth-child(2)) {
+  margin-top: 50px;
+}
+
+#builder-container form section .work-container .work-date,
+#builder-container form section .education-container .edu-date {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+#builder-container form section .work-container .work-date-tile,
+#builder-container form section .education-container .edu-date-tile {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+#builder-container form section .btn-container {
+  margin-top: 10px;
+  align-self: center;
+  display: flex;
+  gap: 7px;
+}
+
+#builder-container form section .btn-container .btn {
+  border: 1px solid var(--border-color);
+  user-select: none;
+  font-size: 1.5rem;
+  line-height: 0.3;
+  border-radius: 1em;
+  padding: 10px;
+  background-color: #34383a;
+}
+
+#builder-container form section .btn-container .btn:hover {
+  background-color: #212324;
+}
+
+#builder-container form section .btn-container .btn:active {
+  background-color: #3f4345;
+}
+
+#builder-container form button {
+  border: 1px solid var(--border-color);
+
+  border-radius: 0.5rem;
+  padding: 5px;
+  font-size: 1rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  align-self: center;
+}
+
+#builder-container form button:hover {
+  background-color: #34383a;
+}
+
+#builder-container form button:active {
+  background-color: #27292b;
+}
+
+#result-container {
+  width: 600px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#result-container #edit {
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+#result-container #edit {
+  color: var(--border-color);
+}
+
+#result-container #edit:hover {
+  color: var(--secondary-font-color);
+}
+
+#result-container #edit:active {
+  color: var(--border-color);
+}
+
+#result-container,
+#result-container * {
+  outline: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+#result-container .separator {
+  height: 5px;
+  margin: 15px 0;
+  background-color: var(--border-color);
+}
+
+#result-container #personal-details .header .name {
+  font-size: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#result-container #personal-details .header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#result-container #personal-details .header .main {
+  display: flex;
+  flex-direction: column;
+}
+
+#result-container #personal-details .header .job-title {
+  color: var(--secondary-font-color);
+  align-self: flex-end;
+}
+
+#result-container #personal-details .header .sub {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#result-container #personal-details .additional-info p {
+  text-align: justify;
+}
+
+#result-container #work-experience {
+  margin-top: 30px;
+}
+
+#result-container #work-experience .title,
+#result-container #education .title {
+  color: rgb(131, 166, 231);
+}
+
+#result-container #work-experience .work-tile .header,
+#result-container #work-experience .work-tile .header .data-container {
+  display: flex;
+}
+
+#result-container #work-experience .work-tile .header {
+  justify-content: space-between;
+  color: var(--secondary-font-color);
+  border: 1px solid var(--secondary-border-color);
+}
+
+#result-container #work-experience .work-tile .header,
+#result-container #work-experience .work-tile .description {
+  padding: 5px;
+}
+
+#result-container #work-experience .work-tile .header .data-container {
+  gap: 5px;
+}
+
+#result-container #work-experience .work-tile .description {
+  text-align: left;
+  margin: 0px 0 20px 0;
+  border-left: 1px solid var(--secondary-border-color);
+  border-right: 1px solid var(--secondary-border-color);
+  border-bottom: 1px solid var(--secondary-border-color);
+}
+
+#result-container #education .edu-tile {
+  border: 1px solid var(--secondary-border-color);
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+#result-container #education .edu-tile,
+#result-container #education .edu-tile .data-container {
+  display: flex;
+  justify-content: space-between;
+  color: var(--secondary-font-color);
+}
+
+#result-container #education .edu-tile .data-container {
+  gap: 5px;
+}
+
+#result-container #work-experience .work-tile .header .date,
+#result-container #education .edu-tile .data-container .date {
+  width: 100px;
+}
