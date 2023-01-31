@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/cvgen/static/css/main.e906ac0f.css",
+    "main.js": "/cvgen/static/js/main.bb36306d.js",
+    "index.html": "/cvgen/index.html",
+    "main.e906ac0f.css.map": "/cvgen/static/css/main.e906ac0f.css.map",
+    "main.bb36306d.js.map": "/cvgen/static/js/main.bb36306d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e906ac0f.css",
+    "static/js/main.bb36306d.js"
+  ]
+}
